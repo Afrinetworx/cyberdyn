@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberdyn</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Cyberdyn provides TV app information, links to view app details and special offers, downloads for TV and mobile apps, installation guides, and WhatsApp support contact.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon.png">
+    
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="flag.png" fetchpriority="high">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e2a38;
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background: #111827;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+        
+        header img {
+            width: 100%;
+            max-width: 720px; /* scales for mobile */
+            height: auto;
+            margin-bottom: 10px;
+        }
+       
+            /* Prevent layout shift by reserving aspect ratio space */
+            aspect-ratio: 1 / 1;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px 10px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin: 20px 0 10px 0;
+        }
+
+        /* BUTTON GRID — LIMIT 6 PER ROW */
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            flex: 0 0 calc(16.66% - 12px); /* 6 per row */
+            padding: 15px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 10px;
+            background: #0056b3;
+            color: #ffffff;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #003f7f;
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 900px) {
+            .btn { flex: 0 0 calc(25% - 12px); } /* 4 per row */
+        }
+        @media (max-width: 600px) {
+            .btn { flex: 0 0 calc(33.33% - 12px); } /* 3 per row */
+        }
+        @media (max-width: 450px) {
+            .btn { flex: 0 0 calc(50% - 12px); } /* 2 per row */
+        }
+
+        /* Modern Google Search */
+        .google-search {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            display: flex;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+
+        .search-btn {
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335);
+            color: white;
+            transition: transform 0.2s;
+        }
+
+        .search-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* WhatsApp */
+        .whatsapp-img {
+            width: 60px;
+            height: 60px;
+            margin: 15px auto;
+        }
+
+        /* Footer */
+        footer {
+            padding: 15px 0;
+            background: #111827;
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- ADDING width / height for PERFECT CLS SCORE -->
+        <img src="flag.png" 
+             alt="Cyberdyn Logo" 
+             fetchpriority="high" 
+             class="logo"
+             width="720"
+             height="288">
+    </header>
+
+    <main>
+
+        <!-- Google Search -->
+        <form class="google-search" action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" name="q" placeholder="Search Google..." class="search-input">
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+
+        <br><br>
+
+        <h2>Available Subscriptions</h2>
+        
+        <br><br>
+        
+        <div class="btn-container">
+            <a class="btn" href="https://cyberdyn.xyz/tv/" target="_blank">Live TV & Sports</a>
+        </div>
+
+        <br><br>
+
+        <h2>Our Services</h2>
+
+        <div class="btn-container">
+            <a class="btn" href="https://wa.link/j1n228" target="_blank">IT Support</a>
+            <a class="btn" href="https://wa.link/4k4cra" target="_blank">Web Design</a>
+            <a class="btn" href="https://wa.link/ycpewn" target="_blank">SEO</a>
+            <a class="btn" href="https://wa.link/k9qaym" target="_blank">Email Support</a>
+        </div>
+
+        <br><br>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.link/das7mo" target="_blank">
+            <img src="wanbg.png" alt="WhatsApp" class="whatsapp-img">
+        </a>
+
+        <h2>Contact Us on Whatsapp +264812360559</h2>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Cyberdyn. All rights reserved.
+    </footer>
+
+</body>
+</html>

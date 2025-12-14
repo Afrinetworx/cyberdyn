@@ -1,0 +1,8 @@
+# robots.txt for https://cyberdyn.xyz/
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Disallow:
+
+# Sitemap location (optional, if you have a sitemap)
+Sitemap: https://cyberdyn.xyz/sitemap.xml
