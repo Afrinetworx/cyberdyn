@@ -1,0 +1,22 @@
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    let key = decodeURIComponent(url.pathname.slice(1));
+
+    if (!key || key.endsWith("/")) {
+      key += "index.html";
+    }
+
+    const object = await env.R2_BUCKET.get(key);
+
+    if (!object) {
+      return new Response("Not Found", { status: 404 });
+    }
+
+    const headers = new Headers();
+    object.writeHttpMetadata(headers);
+    headers.set("etag", object.httpEtag);
+
+    return new Response(object.body, { headers });
+  }
+};
