@@ -7,4 +7,15 @@
     "directory": "./",
     "binding": "ASSETS"
   }
+
+"routes": [
+    {
+      "pattern": "cyberdyn.xyz/*",
+      "zone_name": "cyberdyn.xyz"
+    },
+    {
+      "pattern": "www.cyberdyn.xyz/*",
+      "zone_name": "cyberdyn.xyz"
+    }
+  ]
 }
