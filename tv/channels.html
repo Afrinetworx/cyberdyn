@@ -29,28 +29,6 @@
             margin: 20px 0;
         }
 
-        .btn {
-            display: block;
-            width: 90%;
-            max-width: 400px;
-            margin: 10px auto;
-            padding: 15px;
-            font-size: 18px;
-            text-decoration: none;
-            border-radius: 10px;
-            background: #0056b3;
-            color: #ffffff;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background: #003f7f;
-        }
-
-        /* ========================= */
-        /* CHANNEL LIST STYLING */
-        /* ========================= */
-
         .channel-section {
             max-width: 900px;
             margin: 0 auto;
@@ -77,26 +55,20 @@
             background: #003f7f;
         }
 
-        .channel-list {
+        ul {
             list-style: none;
             padding: 10px 15px;
             margin: 0;
             columns: 1;
         }
 
-        .channel-list li {
+        ul li {
             padding: 4px 0;
             font-size: 15px;
         }
 
-        .dstv-label {
-            color: #3ea6ff;
-            font-weight: bold;
-            margin-right: 6px;
-        }
-
         @media (min-width: 700px) {
-            .channel-list {
+            ul {
                 columns: 2;
             }
         }
@@ -112,257 +84,246 @@
 
 <main>
 
-    <!-- ========================= -->
-    <!-- DSTV CHANNEL LIST -->
-    <!-- ========================= -->
-
-    <h1>DSTV Channel List</h1>
+    <h1>Channel List</h1>
 
     <section class="channel-section">
 
         <details open>
-        <summary>DSTV General</summary>
-        <ul>
-            <li><span class="dstv-label">|DSTV|</span>BBC News</li>
-            <li><span class="dstv-label">|DSTV|</span>Racing 240</li>
-            <li><span class="dstv-label">|DSTV|</span>M-NET</li>
-            <li><span class="dstv-label">|DSTV|</span>Dreamworks</li>
-            <li><span class="dstv-label">|DSTV|</span>kykNET & Kie</li>
-            <li><span class="dstv-label">|DSTV|</span>Cape Town TV</li>
-            <li><span class="dstv-label">|DSTV|</span>eNCA ᵁᴴᴰ</li>
-            <li><span class="dstv-label">|DSTV|</span>CNN International</li>
-            <li><span class="dstv-label">|DSTV|</span>Ignition</li>
-            <li><span class="dstv-label">|DSTV|</span>iNX Prime</li>
-            <li><span class="dstv-label">|DSTV|</span>Al Jazeera</li>
-            <li><span class="dstv-label">|DSTV|</span>Russia Today</li>
-            <li><span class="dstv-label">|DSTV|</span>EURONEWS</li>
-            <li><span class="dstv-label">|DSTV|</span>RAI Italia ᴴᴰ</li>
-            <li><span class="dstv-label">|DSTV|</span>SABC News</li>
-            <li><span class="dstv-label">|DSTV|</span>Sky News</li>
-            <li><span class="dstv-label">|DSTV|</span>NDTV247 ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Emmanuel TV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>BBC World News</li>
-            <li><span class="dstv-label">|DSTV|</span>e tv ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Dumisa ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Deutsche Welle ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>CGTN News ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Lesotho TV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>kykNET Nou!</li>
-            <li><span class="dstv-label">|DSTV|</span>iTV Networks ᴴᴰ</li>
-            <li><span class="dstv-label">|DSTV|</span>GauTV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Fashion One ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>FAITH ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>eNCA ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>BVN ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Daystar ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>CNBC Africa ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Bloomberg ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Bay TV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>1 KZN ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Newzroom Afrika ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>RTP Internacional ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>SABC 1 ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>SABC 2 ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Soweto TV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>SABC 3 ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Tshwane TV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>TV5 Monde Afrique ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>MojaLove ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>kykNET ᴴᴰ</li>
-            <li><span class="dstv-label">|DSTV|</span>Mzansi Magic</li>
-            <li><span class="dstv-label">|DSTV|</span>Mzansi Bioskop ᵁᴴᴰ</li>
-            <li><span class="dstv-label">|DSTV|</span>Mzansi Wethu</li>
-            <li><span class="dstv-label">|DSTV|</span>NHK</li>
-            <li><span class="dstv-label">|DSTV|</span>One Gospel</li>
-            <li><span class="dstv-label">|DSTV|</span>BET</li>
-            <li><span class="dstv-label">|DSTV|</span>Business Day TV</li>
-            <li><span class="dstv-label">|DSTV|</span>CCTV 4</li>
-            <li><span class="dstv-label">|DSTV|</span>Channel O</li>
-            <li><span class="dstv-label">|DSTV|</span>Da Vinci</li>
-            <li><span class="dstv-label">|DSTV|</span>e.TV Extra</li>
-            <li><span class="dstv-label">|DSTV|</span>Mpuma Kapa TV</li>
-            <li><span class="dstv-label">|DSTV|</span>Parliamentary Service</li>
-            <li><span class="dstv-label">|DSTV|</span>The Home Channel</li>
-            <li><span class="dstv-label">|DSTV|</span>WildEarth</li>
-            <li><span class="dstv-label">|DSTV|</span>VIA hd</li>
-            <li><span class="dstv-label">|DSTV|</span>Hilaal TV</li>
-        </ul>
-    </details>
+            <summary>General</summary>
+            <ul>
+                <li>BBC News</li>
+                <li>Racing 240</li>
+                <li>M-NET</li>
+                <li>Dreamworks</li>
+                <li>kykNET & Kie</li>
+                <li>Cape Town TV</li>
+                <li>eNCA ᵁᴴᴰ</li>
+                <li>CNN International</li>
+                <li>Ignition</li>
+                <li>iNX Prime</li>
+                <li>Al Jazeera</li>
+                <li>Russia Today</li>
+                <li>EURONEWS</li>
+                <li>RAI Italia ᴴᴰ</li>
+                <li>SABC News</li>
+                <li>Sky News</li>
+                <li>NDTV247 ᴴᴰ ZA</li>
+                <li>Emmanuel TV ᴴᴰ ZA</li>
+                <li>BBC World News</li>
+                <li>e tv ᴴᴰ ZA</li>
+                <li>Dumisa ᴴᴰ ZA</li>
+                <li>Deutsche Welle ᴴᴰ ZA</li>
+                <li>CGTN News ᴴᴰ ZA</li>
+                <li>Lesotho TV ᴴᴰ ZA</li>
+                <li>kykNET Nou!</li>
+                <li>iTV Networks ᴴᴰ</li>
+                <li>GauTV ᴴᴰ ZA</li>
+                <li>Fashion One ᴴᴰ ZA</li>
+                <li>FAITH ᴴᴰ ZA</li>
+                <li>BVN ᴴᴰ ZA</li>
+                <li>Daystar ᴴᴰ ZA</li>
+                <li>CNBC Africa ᴴᴰ ZA</li>
+                <li>Bloomberg ᴴᴰ ZA</li>
+                <li>Bay TV ᴴᴰ ZA</li>
+                <li>1 KZN ᴴᴰ ZA</li>
+                <li>Newzroom Afrika ᴴᴰ ZA</li>
+                <li>RTP Internacional ᴴᴰ ZA</li>
+                <li>SABC 1 ᴴᴰ ZA</li>
+                <li>SABC 2 ᴴᴰ ZA</li>
+                <li>Soweto TV ᴴᴰ ZA</li>
+                <li>SABC 3 ᴴᴰ ZA</li>
+                <li>Tshwane TV ᴴᴰ ZA</li>
+                <li>TV5 Monde Afrique ᴴᴰ ZA</li>
+                <li>MojaLove ᴴᴰ ZA</li>
+                <li>kykNET ᴴᴰ</li>
+                <li>Mzansi Magic</li>
+                <li>Mzansi Bioskop ᵁᴴᴰ</li>
+                <li>Mzansi Wethu</li>
+                <li>NHK</li>
+                <li>One Gospel</li>
+                <li>BET</li>
+                <li>Business Day TV</li>
+                <li>CCTV 4</li>
+                <li>Channel O</li>
+                <li>Da Vinci</li>
+                <li>e.TV Extra</li>
+                <li>Mpuma Kapa TV</li>
+                <li>Parliamentary Service</li>
+                <li>The Home Channel</li>
+                <li>WildEarth</li>
+                <li>VIA hd</li>
+                <li>Hilaal TV</li>
+            </ul>
+        </details>
 
-    <!-- DSTV Entertainment -->
-    <details>
-        <summary>DSTV Entertainment</summary>
-        <ul>
-            <li><span class="dstv-label">|DSTV|</span>Big Brother Mzansi</li>
-            <li><span class="dstv-label">|DSTV|</span>Big Brother Naija</li>
-            <li><span class="dstv-label">|DSTV|</span>1Max</li>
-            <li><span class="dstv-label">|DSTV|</span>Arise News</li>
-            <li><span class="dstv-label">|DSTV|</span>E-Net</li>
-            <li><span class="dstv-label">|DSTV|</span>SABC News</li>
-            <li><span class="dstv-label">|DSTV|</span>SABC 1</li>
-            <li><span class="dstv-label">|DSTV|</span>SABC 2</li>
-            <li><span class="dstv-label">|DSTV|</span>SABC 3</li>
-            <li><span class="dstv-label">|DSTV|</span>NINA NOVELAS TV</li>
-            <li><span class="dstv-label">|DSTV|</span>Africa Magic Epic</li>
-            <li><span class="dstv-label">|DSTV|</span>Africa Magic Family</li>
-            <li><span class="dstv-label">|DSTV|</span>Africa Magic Urban</li>
-            <li><span class="dstv-label">|DSTV|</span>Africa Magic Showcase</li>
-            <li><span class="dstv-label">|DSTV|</span>E! Entertainment Television</li>
-            <li><span class="dstv-label">|DSTV|</span>CBS Reality</li>
-            <li><span class="dstv-label">|DSTV|</span>TLC Entertainment</li>
-            <li><span class="dstv-label">|DSTV|</span>BBC Brit</li>
-            <li><span class="dstv-label">|DSTV|</span>1Magic</li>
-            <li><span class="dstv-label">|DSTV|</span>Comedy Central ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Star Life ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>MTV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>ROK</li>
-            <li><span class="dstv-label">|DSTV|</span>Telemundo Africa</li>
-            <li><span class="dstv-label">|DSTV|</span>Universal TV</li>
-            <li><span class="dstv-label">|DSTV|</span>LIFETIME</li>
-            <li><span class="dstv-label">|DSTV|</span>CHANNELS 24</li>
-            <li><span class="dstv-label">|DSTV|</span>LAGOS TV</li>
-            <li><span class="dstv-label">|DSTV|</span>WAPTV</li>
-            <li><span class="dstv-label">|DSTV|</span>WAZOBIA MAX</li>
-        </ul>
-    </details>
+        <details>
+            <summary>Entertainment</summary>
+            <ul>
+                <li>Big Brother Mzansi</li>
+                <li>Big Brother Naija</li>
+                <li>1Max</li>
+                <li>Arise News</li>
+                <li>E-Net</li>
+                <li>SABC News</li>
+                <li>SABC 1</li>
+                <li>SABC 2</li>
+                <li>SABC 3</li>
+                <li>NINA NOVELAS TV</li>
+                <li>Africa Magic Epic</li>
+                <li>Africa Magic Family</li>
+                <li>Africa Magic Urban</li>
+                <li>Africa Magic Showcase</li>
+                <li>E! Entertainment Television</li>
+                <li>CBS Reality</li>
+                <li>TLC Entertainment</li>
+                <li>BBC Brit</li>
+                <li>1Magic</li>
+                <li>Comedy Central ᴴᴰ ZA</li>
+                <li>Star Life ᴴᴰ ZA</li>
+                <li>MTV ᴴᴰ ZA</li>
+                <li>ROK</li>
+                <li>Telemundo Africa</li>
+                <li>Universal TV</li>
+                <li>LIFETIME</li>
+                <li>CHANNELS 24</li>
+                <li>LAGOS TV</li>
+                <li>WAPTV</li>
+                <li>WAZOBIA MAX</li>
+            </ul>
+        </details>
 
-    <!-- DSTV Sports -->
-    <details>
-        <summary>DSTV Sports</summary>
-        <ul>
-            <li><span class="dstv-label">|DSTV|</span>SABC SPORTS HD</li>
-            <li><span class="dstv-label">|DSTV|</span>SUPERSPORT AFRICA 1</li>
-            <li><span class="dstv-label">|DSTV|</span>SUPERSPORT AFRICA 2</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport OTT</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport OTT 2</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport OTT 3</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport OTT 4</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport OTT 5</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport OTT 6</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport OTT 7</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport OTT 8</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Action</li>
-            <li><span class="dstv-label">|DSTV|</span>Supersport Blitz</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Schools</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Cricket</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport MOTOSPORT</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Events</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Football</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Golf</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Grandstand</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport LaLiga</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport MáXimo 1</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Play 1</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Play 2</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Play 3</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Play 4</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Premier League</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport PSL</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Rugby</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Tennis</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Variety 1</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Variety 2</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Variety 3</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Variety 4</li>
-            <li><span class="dstv-label">|DSTV|</span>ESPN Africa</li>
-            <li><span class="dstv-label">|DSTV|</span>ESPN 2 Africa</li>
-            <li><span class="dstv-label">|DSTV|</span>WWE Channel</li>
-            <li><span class="dstv-label">|DSTV|</span>Ginx eSports TV</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Liyu 1</li>
-            <li><span class="dstv-label">|DSTV|</span>SuperSport Liyu 2</li>
-        </ul>
-    </details>
+        <details>
+            <summary>Sports</summary>
+            <ul>
+                <li>SABC SPORTS HD</li>
+                <li>SUPERSPORT AFRICA 1</li>
+                <li>SUPERSPORT AFRICA 2</li>
+                <li>SuperSport OTT</li>
+                <li>SuperSport OTT 2</li>
+                <li>SuperSport OTT 3</li>
+                <li>SuperSport OTT 4</li>
+                <li>SuperSport OTT 5</li>
+                <li>SuperSport OTT 6</li>
+                <li>SuperSport OTT 7</li>
+                <li>SuperSport OTT 8</li>
+                <li>SuperSport Action</li>
+                <li>Supersport Blitz</li>
+                <li>SuperSport Schools</li>
+                <li>SuperSport Cricket</li>
+                <li>SuperSport MOTOSPORT</li>
+                <li>SuperSport Events</li>
+                <li>SuperSport Football</li>
+                <li>SuperSport Golf</li>
+                <li>SuperSport Grandstand</li>
+                <li>SuperSport LaLiga</li>
+                <li>SuperSport MáXimo 1</li>
+                <li>SuperSport Play 1</li>
+                <li>SuperSport Play 2</li>
+                <li>SuperSport Play 3</li>
+                <li>SuperSport Play 4</li>
+                <li>SuperSport Premier League</li>
+                <li>SuperSport PSL</li>
+                <li>SuperSport Rugby</li>
+                <li>SuperSport Tennis</li>
+                <li>SuperSport Variety 1</li>
+                <li>SuperSport Variety 2</li>
+                <li>SuperSport Variety 3</li>
+                <li>SuperSport Variety 4</li>
+                <li>ESPN Africa</li>
+                <li>ESPN 2 Africa</li>
+                <li>WWE Channel</li>
+                <li>Ginx eSports TV</li>
+                <li>SuperSport Liyu 1</li>
+                <li>SuperSport Liyu 2</li>
+            </ul>
+        </details>
 
-    <!-- DSTV Cinema -->
-    <details>
-        <summary>DSTV Cinema</summary>
-        <ul>
-            <li><span class="dstv-label">|DSTV|</span>M-Net Extra</li>
-            <li><span class="dstv-label">|DSTV|</span>M-Net</li>
-            <li><span class="dstv-label">|DSTV|</span>Zee Zonke</li>
-            <li><span class="dstv-label">|DSTV|</span>NINA NOVELAS TV</li>
-            <li><span class="dstv-label">|DSTV|</span>Zee World</li>
-            <li><span class="dstv-label">|DSTV|</span>Movie Room</li>
-            <li><span class="dstv-label">|DSTV|</span>eMovies Extra</li>
-            <li><span class="dstv-label">|DSTV|</span>M-Net Movies 1</li>
-            <li><span class="dstv-label">|DSTV|</span>M-Net Movies 2</li>
-            <li><span class="dstv-label">|DSTV|</span>M-Net Movies 3</li>
-            <li><span class="dstv-label">|DSTV|</span>M-Net Movies 4</li>
-            <li><span class="dstv-label">|DSTV|</span>eMovies ᴴᴰ</li>
-            <li><span class="dstv-label">|DSTV|</span>TNT Africa ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>B4U Movies</li>
-            <li><span class="dstv-label">|DSTV|</span>Kix ᴴᴰ</li>
-            <li><span class="dstv-label">|DSTV|</span>Studio Universal</li>
-        </ul>
-    </details>
+        <details>
+            <summary>Cinema</summary>
+            <ul>
+                <li>M-Net Extra</li>
+                <li>M-Net</li>
+                <li>Zee Zonke</li>
+                <li>NINA NOVELAS TV</li>
+                <li>Zee World</li>
+                <li>Movie Room</li>
+                <li>eMovies Extra</li>
+                <li>M-Net Movies 1</li>
+                <li>M-Net Movies 2</li>
+                <li>M-Net Movies 3</li>
+                <li>M-Net Movies 4</li>
+                <li>eMovies ᴴᴰ</li>
+                <li>TNT Africa ᴴᴰ ZA</li>
+                <li>B4U Movies</li>
+                <li>Kix ᴴᴰ</li>
+                <li>Studio Universal</li>
+            </ul>
+        </details>
 
-    <!-- DSTV Documentary -->
-    <details>
-        <summary>DSTV Documentary</summary>
-        <ul>
-            <li><span class="dstv-label">|DSTV|</span>Discovery Channel</li>
-            <li><span class="dstv-label">|DSTV|</span>Discovery Family Africa</li>
-            <li><span class="dstv-label">|DSTV|</span>Food Network</li>
-            <li><span class="dstv-label">|DSTV|</span>HISTORY</li>
-            <li><span class="dstv-label">|DSTV|</span>Investigation Discovery</li>
-            <li><span class="dstv-label">|DSTV|</span>National Geographic</li>
-            <li><span class="dstv-label">|DSTV|</span>National Geographic WILD</li>
-            <li><span class="dstv-label">|DSTV|</span>Crime + Investigation ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>HGTV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>CBS Justice</li>
-            <li><span class="dstv-label">|DSTV|</span>Curiosity Stream</li>
-            <li><span class="dstv-label">|DSTV|</span>BBC Earth</li>
-            <li><span class="dstv-label">|DSTV|</span>BBC Lifestyle</li>
-            <li><span class="dstv-label">|DSTV|</span>Real Time ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Spice TV ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Travel Channel ᴴᴰ ZA</li>
-        </ul>
-    </details>
+        <details>
+            <summary>Documentary</summary>
+            <ul>
+                <li>Discovery Channel</li>
+                <li>Discovery Family Africa</li>
+                <li>Food Network</li>
+                <li>HISTORY</li>
+                <li>Investigation Discovery</li>
+                <li>National Geographic</li>
+                <li>National Geographic WILD</li>
+                <li>Crime + Investigation ᴴᴰ ZA</li>
+                <li>HGTV ᴴᴰ ZA</li>
+                <li>CBS Justice</li>
+                <li>Curiosity Stream</li>
+                <li>BBC Earth</li>
+                <li>BBC Lifestyle</li>
+                <li>Real Time ᴴᴰ ZA</li>
+                <li>Spice TV ᴴᴰ ZA</li>
+                <li>Travel Channel ᴴᴰ ZA</li>
+            </ul>
+        </details>
 
-    <!-- DSTV Kids -->
-    <details>
-        <summary>DSTV Kids</summary>
-        <ul>
-            <li><span class="dstv-label">|DSTV|</span>Cartoonito</li>
-            <li><span class="dstv-label">|DSTV|</span>Boomerang</li>
-            <li><span class="dstv-label">|DSTV|</span>PITCHOUN AFRICA</li>
-            <li><span class="dstv-label">|DSTV|</span>Cartoon Network Africa</li>
-            <li><span class="dstv-label">|DSTV|</span>Nickelodeon ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Nick Jr Africa</li>
-            <li><span class="dstv-label">|DSTV|</span>NickTOONS</li>
-            <li><span class="dstv-label">|DSTV|</span>eToonz ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>JimJam ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Cbeebies</li>
-            <li><span class="dstv-label">|DSTV|</span>Disney Channel</li>
-            <li><span class="dstv-label">|DSTV|</span>Disney Junior</li>
-            <li><span class="dstv-label">|DSTV|</span>Moonbug Kids</li>
-            <li><span class="dstv-label">|DSTV|</span>PBS Kids ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Mindset ᴴᴰ ZA</li>
-        </ul>
-    </details>
+        <details>
+            <summary>Kids</summary>
+            <ul>
+                <li>Cartoonito</li>
+                <li>Boomerang</li>
+                <li>PITCHOUN AFRICA</li>
+                <li>Cartoon Network Africa</li>
+                <li>Nickelodeon ᴴᴰ ZA</li>
+                <li>Nick Jr Africa</li>
+                <li>NickTOONS</li>
+                <li>eToonz ᴴᴰ ZA</li>
+                <li>JimJam ᴴᴰ ZA</li>
+                <li>Cbeebies</li>
+                <li>Disney Channel</li>
+                <li>Disney Junior</li>
+                <li>Moonbug Kids</li>
+                <li>PBS Kids ᴴᴰ ZA</li>
+                <li>Mindset ᴴᴰ ZA</li>
+            </ul>
+        </details>
 
-    <!-- DSTV Music -->
-    <details>
-        <summary>DSTV Music</summary>
-        <ul>
-            <li><span class="dstv-label">|DSTV|</span>SOUNDCITY ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>MTV Music 24 ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>MTV Base ᴴᴰ ZA</li>
-            <li><span class="dstv-label">|DSTV|</span>Mzansi Magic Music</li>
-            <li><span class="dstv-label">|DSTV|</span>TRACE Africa</li>
-            <li><span class="dstv-label">|DSTV|</span>TRACE Urban ᴴᴰ</li>
-            <li><span class="dstv-label">|DSTV|</span>Trace Gospel</li>
-            <li><span class="dstv-label">|DSTV|</span>TRACE Naija</li>
-            <li><span class="dstv-label">|DSTV|</span>MTV Hits</li>
-        </ul>
-    </details>
+        <details>
+            <summary>Music</summary>
+            <ul>
+                <li>SOUNDCITY ᴴᴰ ZA</li>
+                <li>MTV Music 24 ᴴᴰ ZA</li>
+                <li>MTV Base ᴴᴰ ZA</li>
+                <li>Mzansi Magic Music</li>
+                <li>TRACE Africa</li>
+                <li>TRACE Urban ᴴᴰ</li>
+                <li>Trace Gospel</li>
+                <li>TRACE Naija</li>
+                <li>MTV Hits</li>
+            </ul>
+        </details>
 
     </section>
 
-    <!-- WhatsApp -->
-    <a href="https://wa.link/h469ln" target="_blank">
+    <a href="https://wa.link/h469ln">
         <img src="wanbg.png" alt="WhatsApp" class="whatsapp-img">
     </a>
+
     <h1>Contact Us on WhatsApp +264812360559</h1>
 
 </main>
