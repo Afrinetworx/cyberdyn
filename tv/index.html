@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyberdyn TV</title>
 
-    <!-- Meta Description -->
     <meta name="description" content="Cyberdyn offers easy access to TV app info, downloads, installation guides, and support — all in one place. Contact us on WhatsApp for help.">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="icon.png">
-    
     <link rel="preload" as="image" href="logo7.png" fetchpriority="high">
 
     <style>
@@ -25,27 +22,16 @@
             text-align: center;
         }
 
-        /* Header */
         header {
             background: #111827;
             padding: 20px 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             box-shadow: 0 2px 6px rgba(0,0,0,0.3);
         }
 
-        /* Responsive header image */
         header img {
             width: 100%;
-            max-width: 720px; /* scales for mobile */
+            max-width: 720px;
             height: auto;
-            margin-bottom: 10px;
-        }
-
-        header h1 {
-            font-size: 1.8rem;
-            margin: 0;
         }
 
         main {
@@ -55,10 +41,8 @@
 
         h1 {
             font-size: 1.6rem;
-            margin: 20px 0 10px 0;
         }
 
-        /* Buttons */
         .btn {
             display: block;
             width: 90%;
@@ -71,98 +55,124 @@
             background: #0056b3;
             color: #ffffff;
             font-weight: bold;
-            transition: 0.2s;
+            cursor: pointer;
         }
 
         .btn:hover {
             background: #003f7f;
         }
 
-        /* WhatsApp Image */
         .whatsapp-img {
             width: 60px;
             height: 60px;
             margin: 15px auto;
+            cursor: pointer;
         }
 
-        /* Footer */
         footer {
             padding: 15px 0;
             background: #111827;
             font-size: 14px;
-            text-align: center;
-            box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
         }
 
-        /* Responsive adjustments */
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+        }
+
+        .modal-content {
+            position: relative;
+            width: 95%;
+            height: 90%;
+            margin: 5% auto;
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .modal iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
         @media (min-width: 600px) {
-            header img {
-                max-width: 720px;
-                width: 50%;
-            }
-
-            header h1 {
-                font-size: 2rem;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-            }
-
             .btn {
                 display: inline-block;
                 width: auto;
                 padding: 15px 30px;
-                margin: 10px;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header>
-        <!-- ADDING width / height for PERFECT CLS SCORE -->
-        <img src="logo7.png" 
-             alt="Cyberdyn Logo" 
-             fetchpriority="high" 
-             class="logo"
-             width="720"
-             height="288">
-    </header>
+<header>
+    <img src="logo7.png" alt="Cyberdyn Logo" width="720" height="288">
+</header>
 
-    <main>
-        <h1>TV App Info</h1>
-        
-        <br><br>
+<main>
+    <h1>TV App Info</h1>
 
-        <a class="btn" href="https://cyberdyn.xyz/tv/channels.html" target="_blank">TV Channel List</a>
-        <a class="btn" href="https://cyberdyn.xyz/tv/details.html" target="_blank">View TV App Info</a>
-        <a class="btn" href="https://cyberdyn.xyz/tv/offer.html" target="_blank">View Special Offer</a>
-        
-        <br><br>
+    <a class="btn" onclick="openModal('https://cyberdyn.xyz/tv/channels.html')">TV Channel List</a>
+    <a class="btn" onclick="openModal('https://cyberdyn.xyz/tv/details.html')">View TV App Info</a>
+    <a class="btn" onclick="openModal('https://cyberdyn.xyz/tv/offer.html')">View Special Offer</a>
 
-        <h1>TV App Downloads</h1>
-        
-        <br><br>
+    <h1>TV App Downloads</h1>
 
-        <a class="btn" href="https://www.wakatv.net/WAKA_Pro_5.0.2_20251128_stb.apk" target="_blank">Download TV Box App</a>
-        <a class="btn" href="https://www.wakatv.net/WAKA_Pro_5.0.2_20251128_stb.apk" target="_blank">Download Android Smart TV App</a>
-        <a class="btn" href="https://mobile.wakatv.net/WAKA%20Pro_5.0.0_20251126_mobile.apk" target="_blank">Download Mobile App</a>
-        
-        <br><br>
+    <a class="btn" onclick="openModal('https://www.wakatv.net/WAKA_Pro_5.0.2_20251128_stb.apk')">Download TV Box App</a>
+    <a class="btn" onclick="openModal('https://www.wakatv.net/WAKA_Pro_5.0.2_20251128_stb.apk')">Download Android Smart TV App</a>
+    <a class="btn" onclick="openModal('https://mobile.wakatv.net/WAKA%20Pro_5.0.0_20251126_mobile.apk')">Download Mobile App</a>
 
-        <!-- WhatsApp -->
-        <a href="https://wa.link/h469ln" target="_blank">
-            <img src="wanbg.png" alt="WhatsApp" class="whatsapp-img">
-        </a>
-        <h1>Contact Us on Whatsapp +264812360559</h1>
-    </main>
+    <br>
 
-    <!-- Footer -->
-    <footer>
-        &copy; 2025 Cyberdyn. All rights reserved.
-    </footer>
+    <img src="wanbg.png" alt="WhatsApp" class="whatsapp-img"
+         onclick="openModal('https://wa.link/h469ln')">
+
+    <h1>Contact Us on Whatsapp +264812360559</h1>
+</main>
+
+<footer>
+    &copy; 2025 Cyberdyn. All rights reserved.
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <iframe id="modalFrame"></iframe>
+    </div>
+</div>
+
+<script>
+    function openModal(url) {
+        document.getElementById("modal").style.display = "block";
+        document.getElementById("modalFrame").src = url;
+    }
+
+    function closeModal() {
+        document.getElementById("modal").style.display = "none";
+        document.getElementById("modalFrame").src = "";
+    }
+</script>
 
 </body>
 </html>
