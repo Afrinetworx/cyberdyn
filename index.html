@@ -44,6 +44,7 @@
             margin: 20px 0 10px;
         }
 
+        /* BUTTONS */
         .btn-container {
             display: flex;
             flex-wrap: wrap;
@@ -73,33 +74,7 @@
             .btn { flex: 0 0 calc(50% - 12px); }
         }
 
-        .google-search {
-            margin: 20px auto;
-            width: 90%;
-            max-width: 600px;
-            display: flex;
-            border-radius: 50px;
-            overflow: hidden;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-        }
-
-        .search-input {
-            flex: 1;
-            padding: 12px 20px;
-            font-size: 16px;
-            border: none;
-            outline: none;
-        }
-
-        .search-btn {
-            padding: 12px 20px;
-            border: none;
-            font-weight: bold;
-            background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335);
-            color: white;
-        }
-
-        /* INFO BOX — CENTER JUSTIFIED */
+        /* INFO BOX */
         .info-box {
             max-width: 900px;
             margin: 25px auto;
@@ -118,14 +93,52 @@
             color: #38bdf8;
         }
 
-        .info-box ul {
-            list-style-position: inside;
-            padding: 0;
-            margin: 10px 0;
+        /* DROPDOWN */
+        details {
+            margin: 15px 0;
         }
 
-        .info-box li {
-            margin-bottom: 6px;
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px;
+            background: #0f172a;
+            border-radius: 8px;
+        }
+
+        details ul {
+            list-style: none;
+            padding: 10px 0 0;
+            margin: 0;
+        }
+
+        details li {
+            padding: 4px 0;
+        }
+
+        /* SERVICES BOX */
+        .services-box {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #111827;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .service-tile {
+            background: #0f172a;
+            padding: 18px;
+            border-radius: 10px;
+            font-size: 14px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
         }
 
         .whatsapp-img {
@@ -158,40 +171,39 @@
             for businesses and individuals across Northern Namibia and nationwide via remote support.
         </p>
 
-        <strong>Service Areas</strong>
-        <br><br>
-        <ul>
-            Oshakati
-            Ongwediva
-            Ondangwa
-            Northern Namibia
-            Remote Support – All Over Namibia
-        </ul>
-
-        <br>
-
-        <strong>Our IT Services Include:</strong>
-        <br><br>
-        <ul>
-            Computer & Laptop Repairs
-            Software Installation & Troubleshooting
-            Virus & Malware Removal
-            Data Backup & Recovery
-            Network Setup & Configuration (LAN / Wi-Fi)
-            Router, Switch & Firewall Configuration
-            Office & Home Network Support
-            Server Setup & Maintenance
-            Email Setup & Support
-            Website Design & Hosting
-            Remote IT Support & Maintenance
-        </ul>
-
-        <br>
+        <details>
+            <summary>Service Areas</summary>
+            <ul>
+                <li>Oshakati</li>
+                <li>Ongwediva</li>
+                <li>Ondangwa</li>
+                <li>Northern Namibia</li>
+                <li>Remote Support – All Over Namibia</li>
+            </ul>
+        </details>
 
         <p>
             Whether you need on-site assistance or fast remote support,
             Cyberdyn delivers professional, dependable IT solutions tailored to your needs.
         </p>
+    </div>
+
+    <div class="services-box">
+        <h3>Our IT Services</h3>
+
+        <div class="services-grid">
+            <div class="service-tile">Computer & Laptop Repairs</div>
+            <div class="service-tile">Software Installation & Troubleshooting</div>
+            <div class="service-tile">Virus & Malware Removal</div>
+            <div class="service-tile">Data Backup & Recovery</div>
+            <div class="service-tile">Network Setup & Configuration (LAN / Wi-Fi)</div>
+            <div class="service-tile">Router, Switch & Firewall Configuration</div>
+            <div class="service-tile">Office & Home Network Support</div>
+            <div class="service-tile">Server Setup & Maintenance</div>
+            <div class="service-tile">Email Setup & Support</div>
+            <div class="service-tile">Website Design & Hosting</div>
+            <div class="service-tile">Remote IT Support & Maintenance</div>
+        </div>
     </div>
 
     <h2>Available Subscriptions</h2>
